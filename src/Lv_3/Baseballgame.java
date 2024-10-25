@@ -17,7 +17,7 @@ public class Baseballgame {
         for(int i = 0; i < 3; i++) {
             ranNum[i] = arrlist.get(i);
         }
-        System.out.println(Arrays.toString(ranNum));
+//        System.out.println(Arrays.toString(ranNum)); // 빠른 검증을 위해 정답 숫자를 보고 싶을 때 주석 풀어주세요.
     }
 
 
