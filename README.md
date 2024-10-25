@@ -26,7 +26,8 @@
 + 프로그램의 안내를 진행해주세요.
 
 
-## 5.팀원 및 참고자료
+## 5.참고자료
 + https://dev-coco.tistory.com/175
 
-+ Version : 1.0
+
+Version : 1.0
