@@ -25,5 +25,5 @@
 + 프로그램의 안내를 진행해주세요.
 
 5.팀원 및 참고자료
-+[링크이름]https://dev-coco.tistory.com/175
++ [링크이름]https://dev-coco.tistory.com/175
 
