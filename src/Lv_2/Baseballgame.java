@@ -4,21 +4,21 @@ import java.util.*;
 
 public class Baseballgame {
     BaseballGameDisplay hint = new BaseballGameDisplay();
-    private static int[] ran_num = new int[3];
+    private static int[] ranNum = new int[3];
 
 
     public Baseballgame() {
 
         Integer[] arr={1, 2, 3, 4, 5, 6, 7, 8, 9};
         List<Integer> arrlist =Arrays.asList(arr);
-
         Collections.shuffle(arrlist);
         arrlist.toArray(arr);
 
+        // 랜덤 난수 3자리 설정.
         for(int i = 0; i < 3; i++) {
-            ran_num[i] = arrlist.get(i);
+            ranNum[i] = arrlist.get(i);
         }
-        System.out.println(Arrays.toString(ran_num));
+        System.out.println(Arrays.toString(ranNum));
     }
 
 
@@ -85,7 +85,7 @@ public class Baseballgame {
             input /= 10;
         }
         for(int i = 0; i < list.size(); i++) {
-            if(list.get(i) == ran_num[list.size()-i-1]) { // 정답 숫자와 입력 한 숫자가 같은 위치에 같은 숫자면 strike
+            if(list.get(i) == ranNum[list.size()-i-1]) { // 정답 숫자와 입력 한 숫자가 같은 위치에 같은 숫자면 strike
                 num++;
             }
         }
@@ -103,7 +103,7 @@ public class Baseballgame {
 
         for(int i = 0; i < list.size(); i++){
             for(int j = 0; j < list.size(); j++){
-                if(list.get(list.size()-i-1) == ran_num[j]) { //하나씩 비교하며 값은 같으나, 위치가 다를 때 마다 ball
+                if(list.get(list.size()-i-1) == ranNum[j]) { //하나씩 비교하며 값은 같으나, 위치가 다를 때 마다 ball
                     if(i != j) {
                         num++;
                     }

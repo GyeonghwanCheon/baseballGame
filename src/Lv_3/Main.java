@@ -14,19 +14,19 @@ public class Main {
             int input = scanner.nextInt();
 
             switch (input) {
-                case 1:
+                case 1: // '1' 입력 시 게임 시작
                     Baseballgame start = new Baseballgame();
                     start.play();
                     continue;
-                case 2:
+                case 2: // '2' 입력 시 게임 기록 보기
                     BaseballResultView view = new BaseballResultView();
                     view.baseballResultView();
                     break;
-                case 3:
+                case 3: // '3' 입력 시 게임 종료
                     System.out.println("게임을 종료합니다. 감사합니다 :)");
                     flag = false;
                     break;
-                default:
+                default: // '1, 2, 3' 이외의 숫자 입력 시 반복문 재시작으로 1, 2, 3 선택지
                     System.out.println("올바른 숫자를 입력해주세요!");
                     System.out.println("=====================");
                     continue;

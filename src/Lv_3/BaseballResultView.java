@@ -7,6 +7,7 @@ public class BaseballResultView {
     public void baseballResultView() {
 
         ArrayList<Integer> list = BaseballResultSave.getList();
+        // 새롭게 생성을 하면 데이터가 날아가기 떄문에 getlist 로 불러온다.
 
         System.out.println("==========================");
         System.out.println("< 게임 기록 보기 >");

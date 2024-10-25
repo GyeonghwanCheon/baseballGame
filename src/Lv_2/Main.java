@@ -13,14 +13,14 @@ public class Main {
             int input = scanner.nextInt();
 
             switch (input) {
-                case 1:
+                case 1: // '1' 입력 시 게임 시작
                     Baseballgame start = new Baseballgame();
                     start.play();
                     continue;
-                case 2:
+                case 2: // '2' 게임 기록 보기 구현 X --> LV_3
                     System.out.println("구현되지 않았습니다.");
                     break;
-                case 3:
+                case 3: // '3' 게임 종료
                     System.out.println("게임을 종료합니다. 감사합니다 :)");
                     flag = false;
                     break;
